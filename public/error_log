@@ -1,0 +1,2 @@
+[24-Apr-2018 07:48:30 UTC] PHP Warning:  require(/home/eyxm0yexgcdx/public_html/mevoiz/../vendor/autoload.php): failed to open stream: No such file or directory in /home/eyxm0yexgcdx/public_html/mevoiz/index.php on line 24
+[24-Apr-2018 07:48:30 UTC] PHP Fatal error:  require(): Failed opening required '/home/eyxm0yexgcdx/public_html/mevoiz/../vendor/autoload.php' (include_path='.:/opt/alt/php71/usr/share/pear') in /home/eyxm0yexgcdx/public_html/mevoiz/index.php on line 24

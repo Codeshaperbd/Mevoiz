@@ -1,0 +1,1746 @@
+.tg-btn{cursor: pointer;}
+.tg-checkbox input[type=checkbox] + label,
+.tg-radio input[type=radio] + label{
+	color: #363b4d;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 20px;
+	padding: 0 0 0 30px;
+	text-transform: capitalize;
+}
+.tg-checkbox input[type=checkbox] + label:before,
+.tg-radio input[type=radio] + label:before{
+	top: 0;
+	content: '';
+	width: 20px;
+	height: 20px;
+	background: #fff;
+	line-height: 18px;
+	border-radius: 3px;
+	border: 1px solid #bbb;
+}
+.tg-radio input[type=radio] + label:before{border-radius: 50%;}
+.tg-checkbox input[type=checkbox] + label:after{
+	top: 0;
+	left: 0;
+	opacity: 0;
+	width: 20px;
+	height: 20px;
+	content: '\f00c';
+	color: #1e8cbe;
+	font-size: 13px;
+	line-height: 20px;
+	position: absolute;
+	text-align: center;
+	visibility: hidden;
+	font-family: 'FontAwesome';
+}
+.tg-radio input[type=radio] + label:after{
+	top: 5px;
+	left: 5px;
+	opacity: 0;
+	content: '';
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	position: absolute;
+	text-align: center;
+	visibility: hidden;
+	background: #1e8cbe;
+}
+.tg-checkbox input[type=checkbox]:checked + label:before,
+.tg-radio input[type=radio]:checked + label:before{content: '';}
+.tg-checkbox input[type=checkbox]:checked + label,
+.tg-radio input[type=radio]:checked + label{color: #666;}
+.tg-checkbox input[type=checkbox]:checked + label:after,
+.tg-radio input[type=radio]:checked + label:after{
+	opacity: 1;
+	visibility: visible;
+}
+/*==============================================
+			Theme BreadCrumb					
+==============================================*/
+.tg-breadcrumb {
+	margin:0;
+	color: #999;
+	width: auto;
+	float: right;
+	list-style: none;
+	text-align: right;
+	text-transform: capitalize;
+	font:14px/20px 'Work Sans', Arial, Helvetica, sans-serif;
+}
+.tg-breadcrumb li{
+	width:auto;
+	float: left;
+	padding:0 15px;
+	position:relative;
+	line-height:inherit;
+	list-style-type:none;
+}
+.tg-breadcrumb li:after{
+	top:0;
+	left:-3px;
+	color:#484848;
+	content:'\f105';
+	position:absolute;
+	font-size: inherit;
+	line-height: inherit;
+	font-family: 'FontAwesome';
+}
+.tg-breadcrumb li:first-child{ padding-left: 0;}
+.tg-breadcrumb li:first-child:after{display: none;}
+.tg-breadcrumb li a{
+	display:block;
+	color:#484848;
+}
+.tg-fileuploadlabel{
+	width: 100%;
+	float: left;
+	padding: 30px;
+	color: #363b4d;
+	font-size: 14px;
+	line-height: 17px;
+	margin: 0 0 10px;
+	cursor: pointer;
+	border-radius: 5px;
+	border: 3px dashed #eaedef;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+			flex-direction: column;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+		-ms-flex-pack: center;
+			justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+		-ms-flex-align: center;
+			align-items: center;
+	-webkit-align-content: center;
+		-ms-flex-line-pack: center;
+			align-content: center;
+}
+.tg-fileuploadlabel span{display: block;}
+.tg-fileuploadlabel span:first-child{
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 21px;
+}
+.tg-fileuploadlabel span:nth-child(2){padding: 15px 0;}
+.tg-fileuploadlabel span:nth-child(4){
+	color: #363b4d;
+	font-size: 13px;
+	line-height: 16px;
+	margin: 30px 0 0;
+}
+input[type=file].tg-fileinput{display: none;}
+.mCSB_horizontal.mCSB_inside > .mCSB_container{margin: 0 0 13px;}
+.mCSB_scrollTools.mCSB_scrollTools_horizontal{height: 3px;}
+.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_draggerRail{
+	margin: 0;
+	height: 3px;
+	background: #f7f7f7;
+}
+.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar{
+	margin: 0;
+	height: 3px;
+}
+/*==============================================
+			Dashboard Global Elements			
+==============================================*/
+.tg-dbsectionspace{padding: 20px 0;}
+.tg-dashboardbox{
+	width: 100%;
+	float: left;
+	overflow: hidden;
+	background: #fff;
+	position: relative;
+	border-radius: 5px;
+}
+.tg-dashboardbox:hover{
+	-webkit-box-shadow: 0 0 15px 0 rgba(0,0,0,0.20);
+			box-shadow: 0 0 15px 0 rgba(0,0,0,0.20);
+}
+.tg-dashboardboxtitle{
+	width: 100%;
+	float: left;
+	padding: 10px;
+	border-bottom: 1px solid #eaedef;
+}
+.tg-dashboardboxtitle h2{
+	margin: 0;
+	float: left;
+	color: #363b4d;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 20px;
+	padding: 8px 0 8px 10px;
+}
+.tg-dashboardboxtitle .tg-formthemesearch{
+	width: 50%;
+	float: right;
+}
+.tg-dashboardboxtitle .tg-formthemesearch .tg-select:after{line-height: 36px;}
+.tg-dashboardboxtitle .tg-formthemesearch .tg-select select{
+	height: 36px;
+	line-height: 20px;
+	padding: 7px 20px;
+}
+.tg-dashboardholder{
+	z-index: 2;
+	width: 100%;
+	float: left;
+	padding: 30px;
+	position: relative;
+}
+.tg-dashboardscrollbar{
+	width: 100%;
+	float: left;
+	height: 330px;
+	overflow: hidden;
+}
+.tg-dashboardscrollbar .mCSB_inside > .mCSB_container {margin-right: 15px;}
+.tg-dashboardscrollbar .mCSB_scrollTools .mCSB_draggerRail {background: #f7f7f7;}
+.tg-dotnotification{
+	position: relative;
+	padding-right: 26px !important;
+}
+.tg-dotnotification:before{
+	top: 50%;
+	right: 10px;
+	width: 6px;
+	height: 6px;
+	content: '';
+	margin: -3px 0 0;
+	position: absolute;
+	border-radius: 6px;
+	background: #f91942;
+}
+/*==============================================
+		Dashboard Header Style					
+==============================================*/
+.tg-dashboardheader{
+	z-index: 999;
+	background: #fff;
+	padding: 20px 60px;
+	position: relative;
+	-webkit-box-shadow: 0 0 15px 0 rgba(0,0,0,0.20);
+			box-shadow: 0 0 15px 0 rgba(0,0,0,0.20);
+}
+.tg-navigation > ul > li:first-child{padding-left: 0;}
+.tg-navigation > ul > li:last-child{padding-right: 0;}
+.tg-themedropdown{
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+}
+.tg-notification{
+	float: right;
+	margin: 0 0 0 10px;
+}
+.tg-btndropdown{
+	outline: 0;
+	color: #666;
+	background: none;
+	position: relative;
+}
+.tg-btndropdown i{
+	width: 46px;
+	height: 46px;
+	display: block;
+	font-size: 18px;
+	overflow: hidden;
+	line-height: 44px;
+	border-radius: 50%;
+	border: 1px solid #666;
+}
+.tg-dashboardheader .tg-btn{
+	float: left;
+	padding: 0 30px;
+}
+.tg-badge{
+	top: 0;
+	right: 0;
+	color: #fff;
+	min-width: 10px;
+	padding: 1px 6px;
+	font-size: 10px;
+	font-weight: 500;
+	line-height: 15px;
+	text-align: center;
+	border-radius: 50%;
+	position: absolute;
+	background: #f91942;
+	white-space: nowrap;
+	display: inline-block;
+	vertical-align: middle;
+}
+.tg-dropdownmenu{
+	border: 0;
+	margin: 0;
+	right: 0;
+	opacity: 0;
+	top: 150px;
+	left: auto;
+	padding: 0;
+	float: none;
+	width: 330px;
+	display: block;
+	color: #363b4d;
+	font-size: 13px;
+	line-height: 20px;
+	border-radius: 0;
+	background: #fff;
+	list-style: none;
+	visibility: hidden;
+	position: absolute;
+	-webkit-box-shadow: none;
+			box-shadow: none;
+	-webkit-box-shadow: 0 0 8px 0 rgba(0,0,0,0.10);
+			box-shadow: 0 0 8px 0 rgba(0,0,0,0.10);
+}
+.tg-dropdownmenu:before{
+	width: 0;
+	height: 0;
+	content: '';
+	right: 15px;
+	bottom: 100%;
+	position: absolute;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 5px solid #fff;
+}
+.tg-dropdownmenu li{
+	width: 100%;
+	float: left;
+	position: relative;
+	line-height: inherit;
+	list-style-type: none;
+	padding: 20px 20px 20px 38px;
+}
+.tg-dropdownmenu li:before{
+	top: 29px;
+	left: 18px;
+	width: 4px;
+	height: 4px;
+	content: '';
+	border-radius: 50%;
+	position: absolute;
+	background: #f91942;
+}
+.tg-dropdownmenu li + li{border-top: 1px solid #eaeaea;}
+.tg-dropdownmenu li:hover{ background: #f7f7f7; }
+.tg-dropdownmenu li p{
+	margin: 0;
+	line-height: inherit;
+}
+.tg-themedropdown.open .tg-dropdownmenu{
+	top: 70px;
+	opacity: 1;
+	visibility: visible;
+}
+/*==============================================
+		Dashboard Sidebar Navigation Style		
+==============================================*/
+.tg-dashboardnav{
+	width: 100%;
+	float: left;
+}
+.tg-wrapper:before{display: none;}
+.tg-wrapper {
+	overflow: hidden;
+	background: #f7f7f7;
+	padding: 0 0 2px 250px;
+}
+.tg-sidebarwrapper {
+	top: 0;
+	left: 0;
+	z-index: 50;
+	width: 250px;
+	height: 100%;
+	position: fixed;
+	background: #363b4d;
+	-webkit-backface-visibility: hidden;
+	   -moz-backface-visibility: hidden;
+		-ms-backface-visibility: hidden;
+		 -o-backface-visibility: hidden;
+			backface-visibility: hidden;
+}
+.tg-sidebarwrapper .tg-logo{
+	margin: 0;
+	width: 250px;
+	height: 85px;
+	padding: 26px 40px;
+}
+.tg-sidebarwrapper .tg-logo a img{
+	height: 33px;
+	width: 170px;
+}
+.tg-user{
+	width: 250px;
+	float: left;
+	padding: 30px 20px;
+	position: relative;
+	background: #2b2f3e;
+}
+.tg-user figure{
+	margin: 0;
+	float: left;
+	position: relative;
+	border-radius: 50%;
+}
+.tg-user figure a{
+	display: block;
+	overflow: hidden;
+	border-radius: 50%;
+}
+.tg-user figure a img{ display: block; }
+.tg-usercontent{
+	overflow: hidden;
+	padding: 12px 0 12px 15px;
+}
+.tg-usercontent h3{
+	color: #ddd;
+	margin: 0 0 6px;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 16px;
+}
+.tg-usercontent h4{
+	margin: 0;
+	color: #ddd;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 14px;
+}
+.tg-bolticon{
+	top: -2px;
+	left: -2px;
+	width: 22px;
+	height: 22px;
+	position: absolute;
+	border-radius: 50%;
+	background: #f91942;
+}
+.tg-bolticon i{
+	color: #fff;
+	display: block;
+	font-size: 12px;
+	line-height: 22px;
+	text-align: center;
+}
+.tg-btnedit{
+	color: #fff;
+	right: 30px;
+	bottom: -25px;
+	width: 50px;
+	height: 50px;
+	display: block;
+	border: 4px solid;
+	border-radius: 50%;
+	position: absolute;
+}
+.tg-btnedit i{
+	color: #fff;
+	width: 100%;
+	float: left;
+	font-size: 16px;
+	line-height: 42px;
+	border-radius: 50%;
+	text-align: center;
+}
+.tg-btnmenutoggle{
+	top: 110px;
+	left: 100%;
+	color: #fff;
+	cursor: pointer;
+	position: absolute;
+	text-align: center;
+}
+.cls-1 {
+	fill: #2b2f3e;
+	fill-rule: evenodd;
+}
+.tg-btnmenutoggle i{
+	top: 0;
+	left: 0;
+	z-index: 2;
+	color: #fff;
+	width: 100%;
+	height: 100%;
+	display: block;
+	line-height: 67px;
+	position: absolute;
+}
+.tg-navdashboard {
+	width: 250px;
+	float: left;
+	margin: 80px 0;
+	font-size: 14px;
+	line-height: 58px;
+	border-top: 1px solid #495067;
+}
+.tg-navdashboard ul{
+	width: 100%;
+	float: left;
+	list-style: none;
+	line-height: inherit;
+}
+.tg-navdashboard ul li {
+	margin: 0;
+	width: 100%;
+	float: left;
+	position: relative;
+	line-height: inherit;
+	list-style-type: none;
+	border-bottom: 1px solid #495067;
+}
+.tg-navdashboard > ul > li:nth-child(odd){ background: #333848; }
+.tg-navdashboard > ul > li:nth-child(even){ background: #363b4d; }
+.tg-navdashboard > ul > li > a {
+	color: #ddd;
+	width: 100%;
+	float: left;
+	line-height: inherit;
+	border-left: 2px solid transparent;
+}
+.tg-navdashboard > ul > li > a:before{ display: none; }
+.tg-navdashboard ul li a:focus,
+.tg-navdashboard ul li a:hover,
+.tg-navdashboard ul li a:active,
+.tg-navdashboard ul li.tg-active a{ color: #fff; }
+.tg-navdashboard ul li a i,
+.tg-navdashboard ul li a span{
+	float: left;
+	line-height: inherit;
+}
+.tg-navdashboard ul li a i{
+	width: 58px;
+	display: block;
+	font-size: 20px;
+	text-align: center;
+}
+.tg-navdashboard ul li a span{ text-align: left; }
+.tg-navdashboard .tg-dropdowarrow{ display: block; }
+.tg-navdashboard ul li.menu-item-has-children ul{
+	opacity: 1;
+	clear: both;
+	width: auto;
+	float: none;
+	display: none;
+	position: static;
+	overflow: hidden;
+	visibility: visible;
+	margin: 0 0 20px 30px;
+	-webkit-box-shadow: none;
+			box-shadow: none;
+	border-left: 1px solid #495067;
+}
+.tg-navdashboard .menu-item-has-children .sub-menu{ background: none; }
+.tg-navdashboard .menu-item-has-children .sub-menu li{
+	border: 0;
+	width: 100%;
+	float: left;
+	margin: 10px 0 0;
+	line-height: 20px;
+	position: relative;
+	padding: 0 0 0 30px;
+	background: none !important;
+}
+.tg-navdashboard .menu-item-has-children .sub-menu li:before{
+	top: 50%;
+	left: 0;
+	width: 20px;
+	height: 1px;
+	content: '';
+	position: absolute;
+	background:  #495067;
+}
+.tg-navdashboard .menu-item-has-children .sub-menu li a{
+	color: #999;
+	line-height: inherit;
+}
+.tg-navdashboard .tg-dropdowarrow{ top: 20px; }
+.tg-socialandappicons{
+	float: left;
+	width: 250px;
+}
+.tg-socialandappicons ul{
+	float: left;
+	width: 250px;
+	text-align: center;
+}
+.tg-socialandappicons ul li{
+	width: auto;
+	float: none;
+	vertical-align: top;
+	display: inline-block;
+}
+.tg-socialandappicons .tg-socialicons{ padding: 0 0 20px; }
+.tg-appstoreicons{
+	padding: 15px;
+	background: rgba(0,0,0,0.20);
+}
+.tg-appstoreicons li{ padding: 0 5px; }
+.tg-wrapper.tg-openmenu { padding-left: 60px; }
+.tg-wrapper.tg-openmenu .tg-sidebarwrapper { width: 60px; }
+.tg-openmenu .tg-sidebarwrapper .tg-logo{ margin: 0 0 0 60px; }
+.tg-openmenu .tg-user{
+	background: #363b4d;
+	padding: 30px 0 40px 65px;
+}
+.tg-openmenu .tg-btnmenutoggle .cls-1{ fill: #363b4d; }
+.tg-openmenu .tg-btnmenutoggle i:before{ content: '\f105'; }
+.tg-openmenu .tg-socialandappicons{ margin: 0 0 0 60px; }
+/*==============================================
+			Dashboard Inner Banner				
+==============================================*/
+.tg-dashboardbanner{
+	width: 100%;
+	float: left;
+	padding: 30px 60px;
+	position: relative;
+	border-bottom: 1px solid #d5d5d5;
+}
+.tg-dashboardbanner:before{
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 2px;
+	content: '';
+	background: #fff;
+	position: absolute;
+}
+.tg-dashboardbanner h1{
+	margin: 0;
+	color: #666;
+	float: left;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 18px;
+	text-transform: capitalize;
+}
+/*==============================================
+			Dashboard Main						
+==============================================*/
+.tg-main{
+	min-height: 731px;
+	padding: 20px 60px;
+}
+/*==============================================
+			Dashboard Alerts					
+==============================================*/
+.tg-alertexamples{}
+.tg-alert{
+	margin: 0;
+	width: 100%;
+	float: left;
+	font-size: 14px;
+	line-height: 20px;
+	padding: 8px 15px;
+	position: relative;
+}
+.tg-alert + .tg-alert{margin: 10px 0 0;}
+.tg-alert p {
+	margin: 0;
+	font-size: inherit;
+	line-height: inherit;
+	padding: 6px 180px 6px 0;
+}
+.tg-alert p strong{
+	color: inherit;
+	font-weight: 500;
+}
+.tg-anchors{
+	top: 50%;
+	right: 15px;
+	margin: -16px 0 0;
+	position: absolute;
+}
+.tg-anchors a{
+	opacity: 1;
+	float: left;
+	color: inherit;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 32px;
+	text-shadow: none;
+}
+.tg-btndoaction{
+	padding: 0 25px;
+	border-radius: 5px;
+	margin: 0 15px 0 0;
+	background: inherit;
+	display: inline-block;
+	vertical-align: middle;
+	color: #fff !important;
+}
+.alert-info .tg-btndoaction{ background: #31708f; }
+.alert-warning .tg-btndoaction{ background: #d89d49; }
+.alert-danger .tg-btndoaction{ background: #d9534f; }
+.alert-success .tg-btndoaction{ background: #3c763d; }
+.tg-anchors a.close{
+	font-size: 18px;
+	font-weight: 500;
+}
+/*==============================================
+			Dashboard Statistics				
+==============================================*/
+.tg-statistics{
+	width: 100%;
+	float: left;
+}
+.tg-statistic .tg-badge{
+	top: 20px;
+	right: 20px;
+}
+.tg-statistic{ padding: 30px; }
+.tg-statistic figure{
+	width: 70px;
+	margin: 0;
+	float: left;
+}
+.tg-statistic figure img{
+	width: 100%;
+	height: auto;
+	display: block;
+}
+.tg-statistic .tg-contentbox{padding: 6px 0 6px 15px;}
+.tg-contentbox h2{
+	margin: 0 0 10px;
+	font-size: 44px;
+	font-weight: 400;
+	line-height: 32px;
+}
+.tg-contentbox h3{
+	margin: 0;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 20px;
+}
+.tg-btnviewdetail{
+	color: #666;
+	right: 15px;
+	bottom: 10px;
+	position: absolute;
+	padding: 0 14px 0 0;
+	text-transform: capitalize;
+	font: 500 14px/14px 'Quicksand', Arial, Helvetica, sans-serif;
+}
+.tg-btnviewdetail:before{
+	top: 0;
+	right: 0;
+	position: absolute;
+	line-height: inherit;
+	font-family: 'FontAwesome';
+}
+.tg-dashboardscrollbar.tg-myactivitylog,
+.tg-dashboardscrollbar.tg-approvedads{padding: 30px 15px 30px 24px; }
+.tg-myactivitylog .mCSB_container {padding: 0 0 0 6px;}
+.tg-activitylog{
+	width: 100%;
+	float: left;
+	color: #666;
+	font-size: 13px;
+	line-height: 17px;
+	list-style: none;
+	border-left: 2px solid #eaedef;
+}
+.tg-activitylog li{
+	width: 100%;
+	float: left;
+	position: relative;
+	line-height: inherit;
+	list-style-type: none;
+	padding: 0 0 25px 15px;
+}
+.tg-activitylog li:last-child{padding-bottom: 0;}
+.tg-activitylog li:before{
+	top: 0;
+	left: -7px;
+	content: '';
+	width: 12px;
+	height: 12px;
+	display: block;
+	background: #fff;
+	position: absolute;
+	border-radius: 50%;
+	border: 2px solid #ddd;
+}
+.tg-activitylog li h3{
+	margin: 0;
+	color: #363b4d;
+	font-size: 14px;
+	line-height: 17px;
+}
+.tg-activitylog li h3 a{color: #55acee;}
+.tg-activitylog li time{
+	display: block;
+	font-size: 13px;
+	line-height: 16px;
+	padding: 3px 0 0;
+}
+.tg-approvedads{
+	width: 100%;
+	float: left;
+	color: #666;
+	font-size: 13px;
+	line-height: 17px;
+	list-style: none;
+}
+.tg-approvedads li{
+	width: 100%;
+	float: left;
+	padding: 0 0 25px;
+	position: relative;
+	line-height: inherit;
+	list-style-type: none;
+}
+.tg-approvedads li:last-child{padding: 0;}
+.tg-approvedads li figure{
+	margin: 0;
+	float: left;
+	overflow: hidden;
+	border-radius: 5px;
+}
+.tg-approvedads li figure a,
+.tg-approvedads li figure a img{display: block;}
+.tg-approvedads li .tg-adcontent{
+	width: auto;
+	float: none;
+	overflow: hidden;
+	padding: 0 0 0 10px;
+}
+.tg-approvedads li .tg-adcontent h3{
+	color: #363b4d;
+	font-size: 14px;
+	line-height: 14px;
+	margin: 5px 0 4px;
+}
+.tg-approvedads li .tg-adcontent time{
+	display: block;
+	font-size: 13px;
+	line-height: 15px;
+}
+.tg-adverified {
+	color: #666;
+	width: 105px;
+	height: 24px;
+	display: block;
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 20px;
+	text-align: right;
+	border-radius: 20px;
+	padding: 2px 10px 0 26px;
+	border: 1px solid #dbdbdb;
+	background: url(../images/icons/img-15.png) no-repeat 10px 50%;
+}
+.tg-totalviews{padding: 15px;}
+.tg-viewchart{
+	width: 100%;
+	float: left;
+	height: 300px;
+	padding: 15px 0 0;
+}
+.tg-viewchart .ct-bar {
+	stroke: #eee;
+	cursor: pointer;
+}
+.tg-viewchart .ct-grid.ct-horizontal {display: none}
+.tg-viewchart .ct-vertical{
+	stroke-dasharray: 0;
+	stroke: rgba(234, 237, 239, 1);
+}
+.tg-viewchart .ct-label{
+	color: #666;
+	font-size: 13px;
+}
+.tg-offersmessages{padding: 0;}
+.tg-offersmessages ul{
+	width: 100%;
+	float: left;
+	font-size: 13px;
+	line-height: 20px;
+	list-style: none;
+}
+.tg-offersmessages ul li{
+	width: 30%;
+	float: left;
+	position: relative;
+	line-height: inherit;
+	list-style-type: none;
+	padding: 20px 8px 20px 20px;
+}
+.tg-offersmessages ul li + li{border-left: 1px solid #dbdbdb;}
+.tg-offersmessages ul li:nth-child(2){background: #fcfcfc;}
+.tg-offersmessages ul li:last-child{
+	width: 40%;
+	padding: 20px;
+}
+.tg-offersmessages ul li + li:before,
+.tg-offersmessages ul li + li:after{
+	width: 0;
+	height: 0;
+	left: -1px;
+	content: '';
+	position: absolute;
+}
+.tg-offersmessages ul li + li:before{
+	top: 14px;
+	border-top: 8px solid transparent;
+	border-bottom: 8px solid transparent;
+	border-left: 8px solid #dbdbdb;
+}
+.tg-offersmessages ul li + li:after{
+	top: 15px;
+	border-top: 7px solid transparent;
+	border-bottom: 7px solid transparent;
+	border-left: 7px solid #fff;
+}
+.tg-offersmessages ul li:last-child:after{
+	top: 15px;
+	border-top: 7px solid transparent;
+	border-bottom: 7px solid transparent;
+	border-left: 7px solid #fcfcfc;
+}
+.tg-offersmessages ul li .tg-dashboardscrollbar{height: 515px;}
+.tg-offersmessages .tg-ad{
+	margin: 0;
+	width: 100%;
+	float: left;
+	padding: 10px;
+	cursor: pointer;
+}
+.tg-offersmessages .tg-ad figure{width: auto;}
+.tg-offersmessages .tg-ad h3{
+	margin: 0;
+	color: #363b4d;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 25px;
+	overflow: hidden;
+	padding: 0 0 0 10px;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	-o-text-overflow: ellipsis;
+	   text-overflow: ellipsis;
+}
+.tg-offersmessages .tg-ad:hover{
+	background: #f7f7f7;
+	-webkit-box-shadow: none;
+			box-shadow: none;
+}
+.tg-offerers .mCSB_inside > .mCSB_container {margin-right: 12px;}
+.tg-offerer{
+	margin: 0;
+	width: 100%;
+	float: left;
+	padding: 10px;
+	cursor: pointer;
+	position: relative;
+}
+.tg-offerer figure{
+	margin: 0;
+	float: left;
+	overflow: hidden;
+	border-radius: 50%;
+}
+.tg-offerer h3{
+	margin: 0;
+	color: #363b4d;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 20px;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	padding: 10px 0 10px 10px;
+	-webkit-box-orient: vertical;
+	-o-text-overflow: ellipsis;
+	   text-overflow: ellipsis;
+}
+.tg-offerer:hover{background: #f7f7f7;}
+.tg-btndelete{
+	top: 10px;
+	right: 30px;
+	opacity: 0;
+	color: #fff;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	border-radius: 5px;
+	position: absolute;
+	visibility: hidden;
+	background: #f91942;
+}
+.tg-btndelete:hover,
+.tg-btndelete:focus,
+.tg-btndelete:active{color: #fff;}
+.tg-offerer:hover .tg-btndelete{
+	opacity: 1;
+	visibility: visible;
+}
+.tg-chatarea{
+	width: 100%;
+	float: left;
+}
+.tg-messages{}
+.tg-offerermessage,
+.tg-memessage{
+	width: 100%;
+	float: left;
+	margin: 8px 0;
+	position: relative;
+	padding: 0 40px;
+}
+.tg-offerermessage figure,
+.tg-memessage figure{
+	margin: 0;
+	bottom: 21px;
+	width: 30px;
+	height: 30px;
+	overflow: hidden;
+	border-radius: 50%;
+	position: absolute;
+}
+.tg-offerermessage figure{left: 0;}
+.tg-memessage figure{right: 0;}
+.tg-offerermessage figure img,
+.tg-memessage figure img{display: block;}
+.tg-offerermessage .tg-description,
+.tg-memessage .tg-description{}
+.tg-offerermessage .tg-description p,
+.tg-memessage .tg-description p{
+	width: auto;
+	padding: 10px;
+	font-size: 13px;
+	margin: 0 0 5px;
+	line-height: 20px;
+	background: #f7f7f7;
+}
+.tg-offerermessage .tg-description p{float: left;}
+.tg-memessage .tg-description p{float: right;}
+.tg-offerermessage .tg-description p{border-radius: 10px 10px 10px 0;}
+.tg-memessage .tg-description p{border-radius: 10px 10px 0 10px;}
+.tg-offerermessage .tg-description p a,
+.tg-memessage .tg-description p a{
+	color: #55acee;
+	text-decoration: none;
+}
+.tg-offerermessage .tg-description time,
+.tg-memessage .tg-description time{
+	width: 100%;
+	float: left;
+	color: #666;
+	font-size: 11px;
+	line-height: 16px;
+}
+.tg-offerermessage .tg-description time{text-align: left;}
+.tg-memessage .tg-description time{text-align: right;}
+.tg-readmessage .tg-description time{
+	position: relative;
+	padding: 0 16px 0 0;
+}
+.tg-readmessage .tg-description time:before{
+	top: 0;
+	right: 0;
+	width: 16px;
+	height: 16px;
+	font-size: 11px;
+	line-height: 16px;
+	content: '\f00c';
+	position: absolute;
+	font-family: 'FontAwesome';
+}
+.tg-offersmessages ul li .tg-messages.tg-dashboardscrollbar {
+	height: 364px;
+	margin: 0 0 20px;
+}
+.tg-messages .mCSB_inside > .mCSB_container{margin: 0;}
+.tg-messages .mCSB_scrollTools{width: 0;}
+.tg-replaybox{
+	float: left;
+	width: 100%;
+	border: 1px solid #eaedef;
+}
+.tg-replaybox .form-control{
+	border: 0;
+	width: 100%;
+	float: left;
+	resize: none;
+	padding: 8px;
+	height: 100px;
+	font-size: 13px;
+	line-height: 16px;
+	border-radius: 0;
+}
+.tg-iconbox{
+	width: 100%;
+	float: left;
+	padding: 8px;
+	height: 39px;
+	text-align: right;
+	border-top: 1px solid #eaedef;
+}
+.tg-iconbox i{
+	margin: 0 0 0 6px;
+	cursor: pointer;
+	font-size: 16px;
+	line-height: 22px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.tg-todotasklist{
+	height: 557px;
+	padding: 20px 15px 20px 20px;
+}
+.tg-todotasklist ul{
+	width: 100%;
+	float: left;
+	color: #363b4d;
+	font-size: 14px;
+	line-height: 36px;
+	list-style-type: none;
+}
+.tg-todotasklist ul li{
+	width: 100%;
+	float: left;
+	line-height: inherit;
+	list-style-type: none;
+}
+.tg-todotasklist ul li + li{
+	margin: 15px 0 0;
+	padding: 15px 0 0;
+	border-top: 1px solid #eaedef;
+}
+.tg-todotasklist .tg-checkbox{}
+.tg-todotasklist .tg-checkbox input[type=checkbox]:checked + label{
+	color: #666;
+	text-decoration:line-through;
+}
+.tg-footer{
+	position: relative;
+	padding: 15px 60px;
+	background: none !important;
+	border-top: 1px solid #d5d5d5;
+}
+.tg-footer:before{
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	content: '';
+	background: #fff;
+	position: absolute;
+}
+.tg-footernav{
+	padding: 0;
+	width: auto;
+	background: none;
+	line-height: 20px;
+}
+.tg-footernav:before{display: none;}
+.tg-footernav ul{
+	width: 100%;
+	float: left;
+	list-style: none;
+	line-height: inherit;
+}
+.tg-footernav ul li{
+	float: left;
+	line-height: inherit;
+	list-style-type: none;
+}
+.tg-footernav ul li:first-child{padding-left: 0;}
+.tg-footernav ul li a{
+	color: #666;
+	display: block;
+}
+.tg-copyright{
+	padding: 0;
+	width: auto;
+	float: right;
+	font-size: 13px;
+}
+/*==============================================
+			Dashboard Profile Setting			
+==============================================*/
+.tg-profilephotogallery{
+	width: 100%;
+	float: left;
+}
+.tg-profilephotogallery ul{
+	overflow: hidden;
+	list-style: none;
+}
+.tg-profilephotogallery ul li{
+	float: left;
+	list-style-type: none;
+}
+.tg-profilephotogallery ul li + li{padding: 0 0 0 10px;}
+.tg-profilephotogallery ul li figure{
+	margin: 0;
+	overflow: hidden;
+	position: relative;
+	border-radius: 5px;
+}
+.tg-profilephotogallery ul li figure i{
+	top: 3px;
+	right: 3px;
+	z-index: 2;
+	opacity: 0;
+	cursor: pointer;
+	font-size: 14px;
+	line-height: 16px;
+	position: absolute;
+	visibility: hidden;
+}
+.tg-profilephotogallery ul li figure:hover i,
+.tg-profilephotogallery ul li figure.tg-activephoto i{
+	opacity: 1;
+	visibility: visible;
+}
+.tg-profilephotogallery ul li figure img{
+	z-index: 1;
+	display: block;
+	position: relative;
+}
+.tg-dashboardholder strong{
+	width: 100%;
+	float: left;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 21px;
+	padding: 0 0 15px;
+}
+.tg-selectgroup .tg-checkbox{width: 95px;}
+.tg-selectgroup .tg-radio{width: auto;}
+.tg-selectgroup .tg-radio + .tg-radio{margin: 0 0 0 20px;}
+/*==============================================
+			Dashboard Post An Ad				
+==============================================*/
+.tg-dashboardbox + .tg-dashboardbox{margin: 40px 0 0;}
+.tg-contactdetail .tg-inputwithicon i{
+	right: 0;
+	left: auto;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	line-height: 40px;
+	text-align: center;
+}
+.tg-contactdetail .tg-inputwithicon .form-control{padding-right: 40px;}
+.tg-contactdetail .tg-checkbox{
+	width: auto;
+	float: right;
+	padding: 13px 0;
+}
+.tg-contactdetail .tg-checkbox a{color: #55acee;}
+.tg-categorysequence {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	float: left;
+	color:#484848;
+	list-style: none;
+	text-align: center;
+	text-transform: capitalize;
+	font:14px/20px 'Work Sans', Arial, Helvetica, sans-serif;
+}
+.tg-categorysequence li{
+	width:auto;
+	padding:0 15px;
+	position:relative;
+	line-height:inherit;
+	list-style-type:none;
+	vertical-align: top;
+	display: inline-block;
+}
+.tg-categorysequence li:after{
+	top:0;
+	left:-3px;
+	color:#484848;
+	content:'\f105';
+	position:absolute;
+	font-size: inherit;
+	line-height: inherit;
+	font-family: 'FontAwesome';
+}
+.tg-categorysequence li:first-child{ padding-left: 0;}
+.tg-categorysequence li:first-child:after{display: none;}
+.tg-categorysequence li a{color:#55acee;}
+.tg-priceformgroup{
+	position: relative;
+	padding-right: 134px;
+}
+.tg-priceformgroup .tg-checkbox{
+	top: 10px;
+	right: 0;
+	float: none;
+	width: 114px;
+	position: absolute;
+}
+.tg-priceformgroup .tg-checkbox label{
+	color: #666;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 20px;
+}
+.mce-branding-powered-by{display: none;}
+.tg-categorymodal .tg-thememodaldialog{max-width: 870px;}
+.tg-dbcategoriesslider{
+	width: 100%;
+	float: left;
+	margin: 20px 0;
+	padding: 0 10px;
+}
+.tg-dbcategoriesslider .tg-category{
+	width: 100%;
+	padding: 0;
+}
+.tg-dbcategoriesslider.owl-carousel .owl-stage-outer{padding: 4px 0;}
+.tg-category:hover .tg-categoryholder{
+	background: #fff;
+	padding: 0 0 18px;
+	-webkit-box-shadow: 0 0 15px 0 rgba(0,0,0,0.20);
+	box-shadow: 0 0 15px 0 rgba(0,0,0,0.20);
+}
+.tg-dbcategoriesslider .tg-category:hover .tg-categoryholder{padding: 0;}
+.tg-category:hover h4{
+	opacity: 1;
+	bottom: 18px;
+	visibility: visible;
+}
+.tg-dbcategoriesslider .tg-prev {left: 0;}
+.tg-dbcategoriesslider .tg-next {right: 0;}
+.tg-subcategories{
+	clear: both;
+	color: #666;
+	font-size: 14px;
+	overflow: hidden;
+	line-height: 20px;
+	list-style: none;
+	margin: 0 -30px -30px;
+	border-top: 1px solid #dbdbdb;
+}
+.tg-subcategories > li{
+	width: 50%;
+	float: left;
+	padding: 0 30px 30px;
+}
+.tg-subcategories li{
+	position: relative;
+	font-size: inherit;
+	line-height: inherit;
+	list-style-type: none;
+}
+.tg-subcategories > li + li{
+	background: #fcfcfc;
+	border-left: 1px solid #dbdbdb;
+}
+.tg-subcategories ul{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	float: left;
+	font-size: 14px;
+	overflow: hidden;
+	line-height: 20px;
+	list-style: none;
+}
+.tg-subcategories .tg-title{
+	padding: 15px 0;
+	margin: 0 0 20px;
+}
+.tg-subcategories .tg-title strong {
+	color: #363b4d;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 19px;
+}
+.tg-subcategories ul li + li{margin: 15px 0 0;}
+.tg-hassubcategories{padding: 0 20px 0 0;}
+.tg-hassubcategories:before{
+	top: 0;
+	right: 0;
+	content: '\f105';
+	font-size: inherit;
+	position: absolute;
+	line-height: inherit;
+	font-family: 'FontAwesome';
+}
+/*==============================================
+			Dashboard Privacy Setting			
+==============================================*/
+.tg-privacysetting ul{
+	width: 100%;
+	float: left;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 20px;
+	list-style: none;
+	padding: 0 0 30px;
+}
+.tg-privacysetting ul li{
+	width: 100%;
+	float: left;
+	line-height: inherit;
+	list-style-type: none;
+}
+.tg-privacysetting ul li + li{
+	margin: 15px 0 0;
+	padding: 15px 0 0;
+	border-top: 1px solid #eaedef;
+}
+.tg-privacysetting ul li .tg-checkbox{}
+.tg-privacysetting ul li .tg-checkbox label{
+	color: #666;
+	font-weight: 500;
+}
+.tg-privacysetting ul li .tg-checkbox input[type=checkbox]:checked + label{color: #363b4d;}
+.tg-deleteaccount{
+	width: 100%;
+	float: left;
+	background: rgba(217,83,79,0.10);
+}
+.tg-deleteaccount .tg-dashboardboxtitle{border-bottom-color: rgba(217,83,79,0.10);}
+.tg-deleteaccount .tg-dashboardboxtitle h2{color: #a94442;}
+.tg-deleteaccount .tg-btn{
+	color: #fff;
+	outline: none;
+	background: #d9534f;
+}
+.tg-deleteaccount .tg-btn:before{display: none;}
+.tg-modaldeleteconfirmation .tg-thememodaldialog{max-width: 830px;}
+.tg-modaldeleteconfirmation .tg-thememodalcontent{
+	text-align: center;
+	background: #f2dede;
+	border: 1px solid #ebccd1;
+}
+.tg-modaldeleteconfirmation .tg-thememodalcontent h2{
+	color: #a94442;
+	font-size: 20px;
+	line-height: 20px;
+	margin: 0 0 15px;
+}
+.tg-modaldeleteconfirmation .tg-thememodalcontent p{
+	margin: 0 0 30px;
+	color: #a94442;
+	font-size: 16px;
+	line-height: 20px;
+}
+.tg-modaldeleteconfirmation .tg-btnsactions{
+	margin: 0;
+	z-index: 2;
+	width: 100%;
+	float: left;
+	position: relative;
+}
+.tg-modaldeleteconfirmation .tg-btnsactions .tg-btn{
+	padding: 0;
+	margin: 0 15px;
+	width: 200px;
+	text-align: center;
+	background: #363b4d;
+	border-color: #363b4d;
+}
+.tg-modaldeleteconfirmation .tg-btnsactions .tg-btn:hover{
+	background: #d9534f;
+	border-color: #d9534f;
+}
+.tg-modaldeleteconfirmation .tg-btnsactions .tg-btn:before{display: none;}
+.tg-modaldeleteconfirmation .tg-close{background: #d9534f;}
+/*==============================================
+			Dashboard My Ads					
+==============================================*/
+.tg-navtabledata{
+	width: 100%;
+	float: left;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 20px;
+}
+.tg-navtabledata ul{
+	width: 100%;
+	float: left;
+	list-style: none;
+	line-height: inherit;
+}
+.tg-navtabledata ul li{
+	float: left;
+	padding: 0 20px;
+	position: relative;
+	line-height: inherit;
+	list-style-type: none;
+}
+.tg-navtabledata ul li:first-child{padding-left: 0;}
+.tg-navtabledata ul li + li:before{
+	left: -1px;
+	top: 5px;
+	width: 1px;
+	height: 10px;
+	content: '';
+	position: absolute;
+	background: #363b4d;
+}
+.tg-navtabledata ul li a{
+	color: #363b4d;
+	display: block;
+}
+.tg-navtabledata ul li:hover a,
+.tg-navtabledata ul li.tg-active a{font-weight: 500;}
+.tg-otherfilters{
+	width: 100%;
+	float: left;
+	padding: 30px 0;
+}
+.tg-otherfilters .form-group{margin: 0;}
+.tg-otherfilters .tg-sortby{
+	padding-left: 70px;
+	position: relative;
+}
+.tg-otherfilters .tg-sortby span{
+	top: 0;
+	left: 0;
+	color: #666;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 40px;
+	position: absolute;
+}
+.tg-otherfilters .tg-sortby .tg-select{width: 100%;}
+.tg-otherfilters .tg-inputwithicon .form-control{padding-right: 40px;}
+.tg-otherfilters .tg-inputwithicon i{
+	left: auto;
+	right: 0;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+}
+/* .tg-tablescroll{
+	width: 100%;
+	float: left;
+	overflow: hidden;
+	overflow-x: scroll;
+} */
+.tg-dashboardtable{margin: 0;}
+.tg-dashboardtable thead tr th{
+	color: #363b4d;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 20px;
+	text-align: left;
+	padding: 15px 10px;
+	background: #f7f7f7;
+	vertical-align: middle;
+}
+.tg-dashboardtable tbody tr[data-category=sold]{background: url(../images/pattern-01.png);}
+.tg-dashboardtable tbody tr td{
+	text-align: left;
+	padding: 20px 10px;
+}
+.tg-dashboardtable thead tr th .tg-checkbox,
+.tg-dashboardtable tbody tr td .tg-checkbox{
+	width: 20px;
+	height: 20px;
+}
+.tg-dashboardtable tbody tr td,
+.tg-dashboardtable tbody tr td h3,
+.tg-dashboardtable tbody tr td time{
+	color: #363b4d;
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 20px;
+}
+.tg-dashboardtable tbody tr td time{
+	display: block;
+	min-width: 95px;
+	padding: 0 0 10px;
+}
+.tg-dashboardtable tbody tr td h3 + span,
+.tg-dashboardtable tbody tr td time + span{
+	color: #666;
+	display: block;
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 16px;
+}
+.tg-dashboardtable tbody tr td address{
+	margin: 0;
+	color: #666;
+	font-size: 13px;
+	line-height: 20px;
+	font-style: normal;
+}
+.tg-adcategories{
+	min-width: 110px;
+	display: block;
+}
+.tg-adstatus{
+	width: 80px;
+	color: #fff;
+	display: block;
+	font-size: 13px;
+	font-weight: 500;
+	line-height: 30px;
+	border-radius: 3px;
+	text-align: center;
+	text-transform: uppercase;
+}
+.tg-adstatusinactive{
+	color: #363b4d;
+	background: #f7f7f7;
+}
+.tg-adstatusinactive + em{
+	color: #666;
+	display: block;
+	padding: 5px 0 0;
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 16px;
+	font-style: normal;
+}
+.tg-adstatusexpired{background: #fc9209;}
+.tg-adstatusdeleted{background: #f91942;}
+.tg-btnsactions{
+	min-width: 150px;
+	width: 100%;
+	float: left;
+	margin: -5px 0;
+}
+.tg-btnaction{
+	margin: 5px;
+	width: 40px;
+	height: 40px;
+	float: left;
+	color: #363b4d;
+	line-height: 40px;
+	border-radius: 5px;
+	background: #f7f7f7;
+	text-align: center;
+}
+.tg-dashboardtable tbody tr:hover .tg-btnactiondelete{background: #f91942;}
+.tg-dashboardtable tbody tr:hover .tg-btnactionview,
+.tg-dashboardtable tbody tr:hover .tg-btnactionedit,
+.tg-dashboardtable tbody tr:hover .tg-btnactiondelete,
+.tg-dashboardtable tbody tr:hover .tg-btnactionview i,
+.tg-dashboardtable tbody tr:hover .tg-btnactionedit i,
+.tg-dashboardtable tbody tr:hover .tg-btnactiondelete i{color: #fff;}
+.tg-btnaction i{
+	display: block;
+	line-height: 40px;
+}
+.tg-dashboardtable tbody tr:hover{
+	-webkit-box-shadow: 0 0 15px 0 rgba(0,0,0,0.20);
+	box-shadow: 0 0 15px 0 rgba(0,0,0,0.20);
+}
+/*==============================================
+			Dashboard My Favourites				
+==============================================*/
+.tg-tagsold{
+	color: #fff;
+	width: 52px;
+	height: 24px;
+	display: block;
+	margin: 8px 0 0;
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 24px;
+	text-align: center;
+	border-radius: 24px;
+	text-transform: capitalize;
+}
+.tg-myfavourites .tg-btnsactions{min-width: 105px;}
+/*==============================================
+			Dashboard Payments					
+==============================================*/
+.tg-expirynote{
+	width: 100%;
+	float: left;
+}
+.tg-expirynote .tg-description{padding: 0 0 30px;}
+.tg-expirynote .tg-description p{margin: 0;}
+.tg-btns{
+	width: 100%;
+	float: left;
+}
+.tg-expirynote .tg-btns .tg-btn{
+	width: 45%;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+.tg-btnrenew{background: #f91942 !important;}
+.tg-btnrenew:before{display: none;}
+.tg-btnallpackages{float: right;}
+.tg-pkgexpirycounter{
+	width: 100%;
+	float: left;
+}
+.tg-pkgexpirycounter ul{
+	clear: both;
+	margin: -15px;
+	overflow: hidden;
+	list-style: none;
+	text-align: center;
+}
+.tg-pkgexpirycounter ul li{
+	width: 25%;
+	float: left;
+	padding: 15px;
+	list-style-type: none;
+}
+.tg-pkgexpirycounter ul li .tg-holder{
+	width: 100%;
+	float: left;
+	padding: 55px 30px;
+	background: #f7f7f7;
+}
+.tg-pkgexpirycounter ul li .tg-holder h3{
+	margin: 0 0 5px;
+	font-size: 50px;
+	font-weight: 400;
+	line-height: 40px;
+}
+.tg-pkgexpirycounter ul li .tg-holder h4{
+	margin: 0;
+	color: #666;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 23px;
+}
+/*==============================================
+			Dashboard Offer Messages			
+==============================================*/
+.tg-offersmessageswithsearch ul li .tg-dashboardscrollbar{height: 558px;}
+.tg-offersmessageswithsearch ul li:first-child .tg-dashboardscrollbar {height: 480px;}
+.tg-offersmessageswithsearch ul li:last-child .tg-messages.tg-dashboardscrollbar { height: 397px; }
+.tg-offersmessages fieldset{ padding: 0 0 20px; }
+.tg-offersmessages fieldset .form-control{
+	z-index: 1;
+	height: 50px;
+	line-height: 30px;
+	position: relative;
+	padding: 10px 50px 10px 20px;
+}
+.tg-offersmessages fieldset .form-control + i{
+	top: 0;
+	right: 0;
+	z-index: 2;
+	width: 50px;
+	height: 50px;
+	font-size: 16px;
+	line-height: 50px;
+	position: absolute;
+	text-align: center;
+}

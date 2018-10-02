@@ -1,0 +1,105 @@
+/*==========================================================================================
+								Primery Theme Colors										
+==========================================================================================*/
+/*=============================================
+			Theme Text Color
+=============================================*/
+a,
+p a,
+p a:hover,
+a:hover,
+a:focus,
+a:active,
+.tg-stars span:after,
+.tg-categories .item:hover h3,
+.tg-categories .center .item h3,
+.tg-postmetadata li a:hover,
+.tg-titleshortcode h2 span,
+.tg-statistics li h3,
+.tg-statisticicon i,
+.tg-widgetcontent ul li a:hover,
+.tg-contentbox h2,
+.tg-readmessage .tg-description time:before,
+.tg-pkgexpirycounter ul li .tg-holder h3,
+.tg-404message h3 span,
+.tg-comingsooncounter ul li .tg-holder h3,
+.tg-profilephotogallery ul li figure i { color: #00cc67; }
+/*=============================================
+			Theme Background Color
+=============================================*/
+.tg-dropdowarrow,
+.navbar-toggle,
+.tg-prev:hover,
+.tg-next:hover,
+.tg-btnphone:hover,
+.tg-testimonial figure:after,
+.tg-footerbar,
+.tg-homebannervtwo .tg-formbannersearch .tg-btn,
+.tg-pagination ul li.tg-nextpage a:hover,
+.tg-pagination ul li.tg-prevpage a:hover,
+.tg-pagination ul li.tg-active a,
+.tg-pagination ul li a:hover,
+.tg-views ul li.tg-active a,
+.tg-views ul li a:hover,
+.ui-slider-horizontal .ui-slider-range,
+.tg-pricebox,
+.tg-sellercontact .tg-btnphone,
+.tg-formreportthisad .tg-btns .tg-btn:hover,
+.tg-formsearch button,
+.tg-btnedit i,
+.tg-dashboardscrollbar .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,
+.tg-adstatusactive,
+.tg-dashboardtable tbody tr:hover .tg-btnactionview,
+.tg-404message h2:before,
+.tg-videobox figure .tg-btnplayvideo i,
+.tg-close,
+.tg-btn:before,
+.tg-btnreply:hover,
+.tg-btnreply:focus,
+.tg-btnreply:active,
+.tg-lastupdate:before,
+.tg-iconseprator i{ background:#00cc67; }
+/*=============================================
+			Theme Border Color
+=============================================*/
+input:focus,
+.select select:focus,
+.form-control:focus,
+.tg-themerangeslider .ui-slider-handle,
+.tg-pricebox:before,
+.tg-formreportthisad .tg-btns .tg-btn:hover,
+.tg-navdashboard ul li.tg-active > a,
+.tg-navdashboard ul li a:focus,
+.tg-navdashboard ul li a:hover { border-color: #00cc67; }
+.tg-btnedit{ border-color: rgba(0, 204,103,0.50); }
+.tg-viewchart .ct-bar:hover {stroke: #00cc67;}
+/*==========================================================================================
+								Secondary Theme Colors										
+==========================================================================================*/
+/*=============================================
+			Theme Text Color
+=============================================*/
+.tg-btndropdown,
+.tg-comingsooncounter ul li .tg-holder h4 { color: #363b4d; }
+/*=============================================
+			Theme Background Color
+=============================================*/
+.tg-topbar,
+.tg-prev,
+.tg-next,
+.tg-post figure,
+.tg-footer,
+.tg-formnewsletter fieldset button,
+.tg-adstatussold,
+.tg-dashboardtable tbody tr:hover .tg-btnactionedit,
+.tg-tagsold,
+.tg-404message:before,
+.tg-404message h2,
+.tg-logobox:before { background:#363b4d; }
+.tg-videobox figure .tg-btnplayvideo{background: rgba(54,59,77,0.10);}
+/*=============================================
+			Theme Border Color
+=============================================*/
+.tg-btndropdown .tg-userdp img,
+.tg-comingsooncounter ul li .tg-holder { border-color: #363b4d; }

@@ -1,0 +1,758 @@
+/*
+Author:Codeshaper;
+Author Url: codeshaper.net
+
+
+font-family: 'Kenia', cursive;
+font-family: 'Lato', sans-serif;
+*/
+
+@font-face {
+    font-family: NexaBold;
+    src: url('../fonts/NexaBold.otf');
+}
+
+
+@font-face {
+    font-family: NexaLight;
+    src: url('../fonts/NexaLight.otf');
+}
+
+
+@font-face {
+    font-family: AmericanCaptain;
+    src: url(../fonts/AmericanCaptain.otf);
+    src: url(../fonts/AmericanCaptain.ttf);
+}
+
+body{
+	font-family: 'Lato', sans-serif;
+}
+a,
+a:hover{
+	text-decoration: none;
+}
+/*
+======= 1. Header Css
+*/
+.header-top {
+    background: #363b4d;
+    padding: 10px 0px;
+    font-family: NexaLight;
+}
+
+.header-top ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.header-top ul li {
+    display: inline-block;
+}
+.header-top ul.left li {
+    margin-right: 15px;
+}
+.header-top ul.right{
+	 float: right;
+}
+.header-top ul.right li {
+    margin-left: 15px;
+   
+}
+
+.header-top ul li a{
+	color: #fff;
+	font-size: 10px;
+	text-decoration: none;
+}
+
+.header-top ul li a span {
+    color: #fb249d;
+    font-weight: bold;
+}
+.header-top ul.right li a{
+	text-transform: uppercase;
+}
+
+
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+
+.navbar-default .navbar-nav>li>a{
+	font-family: NexaBold;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+
+
+.navbar-default .navbar-nav>li>a{
+    color: #0546a0;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: #fb269e;
+    background: transparent;
+}
+
+.navbar-nav>li>a {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+
+
+
+.headersocial {
+    overflow: hidden;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.headersocial ul {
+    float: right;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.headersocial ul li {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.headersocial ul li a {
+    font-size: 15px;
+    margin-left: 15px;
+    color: #363b4d;
+    font-weight: bold;
+}
+
+
+.header-bottom {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+}
+.item img {
+    width: 100%;
+}
+.item{
+	position: relative;
+}
+.item:after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: rgba(0,0,0, .6);
+    top: 0;
+    left: 0;
+}
+
+
+a.right.carousel-control ,
+a.left.carousel-control {
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    opacity: 1;
+    color: #0546a0;
+    line-height: 50px;
+    top: 45%;
+}
+
+
+
+.slider-content {
+    position: absolute;
+    top: 35%;
+    text-align: center;
+    width: 650px;
+    margin: 0 auto;
+    left: 33%;
+}
+
+
+.slider-content input{
+	width: 100%;
+	background: transparent;
+	border:1px solid #fff;
+	border-radius: 5px;
+	padding: 12px;
+	color: #fff;
+}
+
+.slider-content h2 {
+    font-size: 42px;
+    color: #fff;
+	font-family: 'Kenia', cursive;
+}
+
+.slider-content input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #fff;
+    font-family: 'Kenia', cursive;
+    opacity: 1; /* Firefox */
+}
+
+.slider-content input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #fff;
+    font-family: 'Kenia', cursive;
+}
+
+.slider-content input::-ms-input-placeholder { /* Microsoft Edge */
+    color: #fff;
+    font-family: 'Kenia', cursive;
+}
+
+
+
+/*-- 
+============== country carousel 
+--*/
+.carousel-country-wrap {
+    overflow: hidden;
+    margin-top: -80px;
+}
+
+.carousel-country-single {
+    text-align: center;
+    border-right: 1px solid #fff;
+}
+
+.carousel-country-single-top {
+    background: #1275ff;
+    color: #fff;
+    height: 80px;
+    display: block;
+    padding: 15px;
+}
+
+.carousel-country-single-top i {
+    font-size: 20px;
+}
+
+.carousel-country-single h3 {
+    margin: 7px auto;
+    font-size: 15px;
+}
+.carousel-country-single-middle img {
+    width: 101%;
+}
+
+.carousel-country-single-bottom {
+    margin-top: 25px;
+}
+
+.carousel-country-single-bottom h3 {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.carousel-country-single-bottom i {
+    margin: 15px 0px;
+    font-size: 25px;
+    color: #1275ff;
+}
+
+
+button.owl-next {
+    position: absolute;
+    right: -100px;
+    top: 45%;
+    outline: none;
+}
+
+button.owl-prev {
+    position: absolute;
+    left: -100px;
+    top: 45%;
+    outline: none;
+}
+
+
+.carousel-country .owl-carousel {
+    margin-top: -80px;
+}
+.owl-item a {
+    display: block;
+}
+.owl-item a:hover {
+    text-decoration: none;
+}
+.featured {
+    background: #363b4d;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0px;
+    margin-bottom: 50px;
+}
+.featured h2 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.intro{
+	margin-bottom: 40px;
+	overflow: hidden;
+}
+.intro-left {
+    background: #1275ff;
+    color: #fff;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+.intro-right {
+    height: 100px;
+    background: #0546a0;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.intro-right i {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.intro-left img {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+
+.abou-us{
+	padding-top: 20px 40px;
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+
+
+.about-us-left img {
+    width: 100%;
+}
+
+
+.about-us-right h2 {
+	font-family: AmericanCaptain;
+}
+
+.about-us-right h2 {
+    font-family: AmericanCaptain;
+    font-size: 60px;
+    margin: 0 0px 10px 0px;
+}
+
+.about-us-right p {
+    font-weight: 700;
+    /* font-size: 14px; */
+}
+
+
+/*-- packegs --*/
+.packegs h2.title {
+    font-family: AmericanCaptain;
+    font-size: 60px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 30px;
+    width: 277px;
+    margin: 25px auto 40px;
+}
+.packegs h2.title:after{
+	content: "";
+    position: absolute;
+    width: 222px;
+    height: 2px;
+    background: #363b4d;
+    bottom: -15px;
+    left: 28px;
+}
+
+
+.packeg-single {
+	position: relative;
+    border: 1px solid #d3d3d3;
+    /*overflow: hidden;*/
+    text-align: center;
+    
+    margin-bottom: 30px;
+    border-bottom: 0px;
+}
+
+
+
+
+.title h2 {
+    margin: 0;
+    color: #fff;
+    padding: 8px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: AmericanCaptain;
+    letter-spacing: 1px;
+}
+.packeg-wrap .one .title h2{
+    background: #1275ff;
+}
+
+.packeg-wrap .two .title h2{
+    background: #0546a0;
+}
+.price h2 {
+    color: #363b4d;
+    font-size: 25px;
+}
+
+.minutes h2 ,
+.price h2 {
+    color: #363b4d;
+    font-size: 25px;
+    margin: 0;
+    border-bottom: 1px solid #d3d3d3;
+    padding: 15px 0px;
+    font-family: 'Abel', sans-serif;
+
+}
+
+.minutes h2 sub {
+    font-size: 12px;
+    color: #000;
+}
+
+.country-name h2 {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-bottom: 1px solid #Ddd;
+    border-top: 1px solid #ddd;
+    padding: 10px 0px;
+    background: #f2f2f2;
+}
+
+/*.signup {
+    background: #f6fbff;
+    position: relative;
+    width: 100%;
+}
+.signup:before {
+  border-top: 35px solid red;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  content: "";
+  height: 0;
+  left: 0;
+  position: absolute;
+  bottom: -35px;
+  width: 0;
+}*/
+
+
+
+.signup {
+    background-image: url(../images/signupbg.png);
+    background-size: cover;
+    width: 100%;
+    height: 103px;
+    line-height: 86px;
+    background-position: center;
+    letter-spacing: 1px;
+}
+
+.signup a {
+    text-decoration: none;
+    font-size: 19px;
+    font-family: AmericanCaptain;
+}
+.signup {
+    background-image: url(../images/signupbg.png);
+    background-size: cover;
+    width: 102%;
+    height: 103px;
+    line-height: 86px;
+    background-position: center;
+    letter-spacing: 1px;
+    margin-left: -1px;
+}
+
+
+
+.one .signup a{
+	color: #1275ff;
+}
+
+
+.two .signup a{
+	color: #0546a0;
+}
+
+.packegs {
+    padding: 0px 0px 50px;
+}
+
+a.view-packeg {
+    background: #1275ff;
+    text-align: center;
+    display: block;
+    overflow: hidden;
+    width: 170px;
+    margin: 0 auto;
+    color: #fff;
+    padding: 15px 0px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    text-decoration: none; 
+    transition: .5s;
+}
+
+a.view-packeg:hover {
+	background: #0546a0;
+	color:#fff;
+}
+
+.counter-area {
+    background: url(../images/counter-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    padding: 60px 0px 50px;
+    margin-bottom: 80px;
+}
+
+.counter-area:after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0, .5);
+    /* z-index: 9; */
+    top: 0;
+    left: 0;
+    content: "";
+}
+
+.single-counter {
+    position: relative;
+    z-index: 99;
+}
+
+.single-counter h2 {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.single-counter {
+    position: relative;
+    z-index: 99;
+    text-align: center;
+}
+
+.single-counter p {
+    color: #fff;
+    font-size: 20px;
+}
+
+
+
+.partnar h2.title {
+    font-family: AmericanCaptain;
+    font-size: 60px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 30px;
+    width: 280px;
+    margin: 25px auto 40px;
+}
+
+.partnar h2.title:after {
+    content: "";
+    position: absolute;
+    width: 222px;
+    height: 2px;
+    background: #363b4d;
+    bottom: -15px;
+    left: 28px;
+}
+
+.partnar .owl-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+.partnar .owl-carousel .owl-item img{
+	width: auto;
+}
+
+footer.footer {
+    background: #454c65;
+    padding: 30px 0px;
+}
+
+.footer-left ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+.footer-left ul li {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+
+.footer-left ul li:after {
+    position: absolute;
+    content: url(../images/footer-angle.png);
+    left: -20px;
+    top: 6px;
+}
+
+.image img {
+    max-width: 100%;
+}
+
+
+.footer-left ul li a{
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+
+.footer-right-wrap {
+    text-align: right;
+}
+
+.footer-right>h2 {
+    color: #fff;
+    text-align: left;
+    font-size: 24px;
+}
+.footer-right form{
+    position: relative;
+}
+.footer-right form input {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+}
+.footer-right form button {
+    position: absolute;
+    height: 50px;
+    right: 0;
+    top: 0;
+    font-size: 20px;
+    color: #363b4d;
+    padding: 0px 21px;
+    border: none;
+    background: #fff;
+}
+
+.footer-social h3 {
+    color: #fff;
+    font-size: 20px;
+}
+
+.footer-social ul{
+	margin: 0;
+	padding:0;
+	list-style: none;
+} 
+
+.footer-social ul li{
+	display: inline-block;
+} 
+
+.footer-social ul li a {
+    color: #fff;
+    padding-left: 13px;
+    font-size: 16px;
+}
+
+.copyright {
+    background: #363b4d;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    padding: 20px 0px;
+}
+
+.slider-content button {
+    /* width: 300px; */
+    right: 0px;
+    position: absolute;
+    bottom: 0;
+    padding: 11px 15px;
+    font-size: 26px;
+    height: 46px;
+    line-height: 10px;
+    background: #fff;
+    border: 0px;
+    border: 1px solid #0546a0;
+    border-radius: 4px;
+    font-family: 'Kenia';
+    color: #0546a0;
+}
+
+
+.submit{
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    background: #0546a0;
+    border: 2px solid #fff;
+    padding: 8px;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 6px;
+}
+
+
+span.tg-userdp img {
+    border-radius: 100%;
+    margin-left: 15px;
+    margin-top: -6px;
+}
+
+.countryTab {
+    background: #1275ff;
+    margin: 0;
+}
+
+
+.footerCountry {
+    padding-top: 30px;
+}
+
+
+.footerCountry .nav-tabs>li>a{
+    font-size: 24px;
+    color: #fff;
+}
+
+.footerCountry ul li {
+    padding: 4px 17px !important;
+}
+
+.showCountry a {
+    font-size: 22px;
+    color: #ddd;
+}
